@@ -1,0 +1,61 @@
+/**
+ * @mainpage CloudForge Load Balancer
+ *
+ * @section brand Route. Scale. Protect.
+ *
+ * CloudForge Load Balancer is a configurable C++ simulation of a
+ * large-company request-routing environment. It maintains request queues,
+ * processes jobs through dynamically allocated web servers, blocks traffic
+ * from configured IP ranges, and produces quiet or verbose operational logs.
+ *
+ * @section architecture System Architecture
+ *
+ * Incoming Request -> IPBlocker -> Switch
+ *
+ * The Switch routes processing jobs marked P to the Processing Load Balancer
+ * and streaming jobs marked S to the Streaming Load Balancer. Each load
+ * balancer manages its own queue, web-server pool, scaling decisions, and
+ * operational statistics.
+ *
+ * @section components Main Components
+ *
+ * - Request stores source IP, destination IP, processing time, job type,
+ *   arrival cycle, and request ID.
+ * - RequestGenerator creates reproducible randomized traffic.
+ * - IPBlocker rejects configured IP address ranges.
+ * - Switch routes P and S jobs to separate load balancers.
+ * - LoadBalancer manages a request queue and dynamically sized server pool.
+ * - WebServer processes one request at a time.
+ * - Config loads runtime settings from an external configuration file.
+ * - Logger creates quiet summaries and detailed verbose event logs.
+ *
+ * @section scaling Dynamic Scaling
+ *
+ * Each load balancer attempts to keep its queue between 50 and 80 requests
+ * per active server. It adds a server when the upper threshold is exceeded
+ * and removes an idle server when the lower threshold is crossed. A
+ * configurable cooldown prevents rapid scaling changes.
+ *
+ * @section security Firewall Protection
+ *
+ * The IPBlocker provides a configurable IP-prefix firewall. The default
+ * configuration blocks the documentation range 203.0.113.0/24 so rejected
+ * traffic can be demonstrated safely and reproducibly.
+ *
+ * @section bonus Bonus Implementation
+ *
+ * The higher-level Switch runs processing and streaming load balancers
+ * concurrently and records separate routing statistics for both job types.
+ *
+ * @section operation Program Operation
+ *
+ * The user enters the initial server count, number of clock cycles, and
+ * logging mode. Quiet mode creates starting and ending summaries. Verbose
+ * mode additionally records routing, assignment, completion, firewall, and
+ * scaling events.
+ *
+ * @section build Building the Program
+ *
+ * Run `make` to compile, `make run` to execute, `make docs` to generate this
+ * documentation, and `make clean` to remove compiled files.
+ */
