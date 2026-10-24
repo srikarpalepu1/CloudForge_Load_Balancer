@@ -16,3 +16,6 @@ docs/latex/
 # Operating-system files
 .DS_Store
 Thumbs.db
+
+# Submission packages
+*.zip
