@@ -1,0 +1,38 @@
+
+================================================================
+CLOUDFORGE STARTING STATUS
+================================================================
+Mode: Quiet
+Starting servers: 20
+Starting queue size: 2000
+Clock cycles: 100000
+Task-time range: 5 to 50 clock cycles
+Blocked IP prefix: 203.0.113.
+Processing queue: 1031
+Streaming queue: 969
+
+================================================================
+CLOUDFORGE ENDING STATUS
+================================================================
+Simulation status: COMPLETE
+Starting queue size: 2000
+Ending queue size: 257
+Task-time range: 5 to 50 clock cycles
+Total requests generated: 22092
+Accepted requests: 20969
+Processing requests routed: 10524
+Streaming requests routed: 10445
+Completed requests: 20706
+Blocked or discarded requests: 1123
+Active servers: 6
+Busy servers: 6
+Idle servers: 0
+Inactive or removed servers: 33
+Servers added through scaling: 19
+Servers removed through scaling: 33
+Peak combined queue size: 2000
+Peak combined server count: 25
+Average queue wait: 952.177675 clock cycles
+Processing ending queue: 140
+Streaming ending queue: 117
+Log file: logs/cloudforge_quiet.log
