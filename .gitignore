@@ -1,0 +1,18 @@
+# Compiled files
+*.exe
+*.o
+*.obj
+
+# Build directory
+build/
+
+# Generated Doxygen output
+docs/html/
+docs/latex/
+
+# Editor configuration
+.vscode/
+
+# Operating-system files
+.DS_Store
+Thumbs.db
