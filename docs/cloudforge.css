@@ -1,0 +1,165 @@
+:root {
+    --cloudforge-navy: #0b1f3a;
+    --cloudforge-blue: #1677d2;
+    --cloudforge-cyan: #38d9ff;
+    --cloudforge-light: #eef6ff;
+    --cloudforge-text: #172033;
+    --cloudforge-border: #d8e3f0;
+}
+
+body {
+    background: #f4f7fb;
+    color: var(--cloudforge-text);
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+#top {
+    background: var(--cloudforge-navy);
+    border-bottom: 4px solid var(--cloudforge-cyan);
+}
+
+#titlearea {
+    background: linear-gradient(
+        120deg,
+        var(--cloudforge-navy),
+        var(--cloudforge-blue)
+    );
+    color: white;
+    padding: 12px 24px;
+}
+
+#projectname {
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+#projectbrief,
+#projectnumber {
+    color: #d8f6ff;
+}
+
+#projectlogo img {
+    max-height: 72px;
+    margin-right: 14px;
+}
+
+#main-nav,
+.sm-dox {
+    background: var(--cloudforge-navy);
+}
+
+.sm-dox a,
+.sm-dox a:hover,
+.sm-dox a:focus {
+    color: white;
+    text-shadow: none;
+}
+
+.sm-dox a:hover,
+.sm-dox a.highlighted {
+    background: var(--cloudforge-blue);
+}
+
+div.header {
+    background: linear-gradient(90deg, #e7f2ff, #f8fbff);
+    border-bottom: 1px solid var(--cloudforge-border);
+}
+
+.headertitle .title {
+    color: var(--cloudforge-navy);
+    font-weight: 700;
+}
+
+.contents {
+    max-width: 1180px;
+    margin: 24px auto;
+    padding: 28px 34px;
+    background: white;
+    border: 1px solid var(--cloudforge-border);
+    border-radius: 14px;
+    box-shadow: 0 8px 28px rgba(11, 31, 58, 0.08);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--cloudforge-navy);
+}
+
+h2 {
+    border-bottom: 2px solid var(--cloudforge-cyan);
+    padding-bottom: 7px;
+}
+
+a,
+a:visited {
+    color: #0969bd;
+}
+
+a:hover {
+    color: var(--cloudforge-blue);
+}
+
+.memitem {
+    border: 1px solid var(--cloudforge-border);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(11, 31, 58, 0.06);
+}
+
+.memproto,
+.mlabels,
+.memtitle {
+    background: linear-gradient(90deg, #dcecff, #eef7ff);
+    color: var(--cloudforge-navy);
+    border-color: var(--cloudforge-border);
+}
+
+.memdoc {
+    background: white;
+    border-color: var(--cloudforge-border);
+}
+
+.directory,
+.classindex,
+.directory table {
+    background: white;
+    border-color: var(--cloudforge-border);
+}
+
+.fragment {
+    background: #0d1b2a;
+    border: 1px solid #233b55;
+    border-radius: 8px;
+    color: #e8f3ff;
+    padding: 12px;
+}
+
+div.line {
+    color: #e8f3ff;
+}
+
+code {
+    background: var(--cloudforge-light);
+    border-radius: 4px;
+    color: #075b9e;
+    padding: 2px 5px;
+}
+
+.footer {
+    color: #52657a;
+}
+
+@media screen and (max-width: 768px) {
+    .contents {
+        margin: 10px;
+        padding: 18px;
+    }
+
+    #projectname {
+        font-size: 22px;
+    }
+}

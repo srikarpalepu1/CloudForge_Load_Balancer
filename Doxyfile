@@ -1,5 +1,5 @@
 PROJECT_NAME           = "CloudForge Load Balancer"
-PROJECT_BRIEF          = "Route. Scale. Protect."
+PROJECT_BRIEF          = "Route. Scale. Protect. | Dynamic C++ Request Orchestration"
 PROJECT_NUMBER         = "1.0"
 
 OUTPUT_DIRECTORY       = docs
@@ -43,3 +43,6 @@ QUIET                   = NO
 WARNINGS                = YES
 WARN_IF_UNDOCUMENTED    = YES
 WARN_IF_DOC_ERROR       = YES
+
+PROJECT_LOGO            = docs/cloudforge-logo.svg
+HTML_EXTRA_STYLESHEET   = docs/cloudforge.css

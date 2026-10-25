@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1f3a"/>
+      <stop offset="100%" stop-color="#1677d2"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="128" height="128" rx="24" fill="url(#background)"/>
+
+  <path d="M38 76h51c11 0 19-7 19-17s-8-17-19-17h-2C83 29 72 21 58 21
+           41 21 28 33 27 49C16 51 9 59 9 69c0 12 10 21 22 21h7"
+        fill="none" stroke="#ffffff" stroke-width="8"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <circle cx="42" cy="96" r="7" fill="#38d9ff"/>
+  <circle cx="64" cy="108" r="7" fill="#38d9ff"/>
+  <circle cx="86" cy="96" r="7" fill="#38d9ff"/>
+
+  <path d="M64 75v24M64 87H42v2M64 87h22v2"
+        fill="none" stroke="#38d9ff" stroke-width="5"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="64" y="65" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="24"
+        font-weight="700" fill="#ffffff">CF</text>
+</svg>
